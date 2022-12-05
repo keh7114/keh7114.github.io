@@ -51,33 +51,33 @@ services:
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
       
-  Make sure to update TZ to reflect your current timezone as well as update the serverURL to your droplet's public IP address.
+ Make sure to update TZ to reflect your current timezone as well as update the serverURL to your droplet's public IP address.
       
-   Finally press control + X + Y to save the file and press enter to exit
+ Finally press control + X + Y to save the file and press enter to exit
       
-   Now, we enter into wireguard by using the command cd ~/wireguard/
+ Now, we enter into wireguard by using the command cd ~/wireguard/
       
-   To view the QR codes, use the command docker-compose logs -f wireguard
+ To view the QR codes, use the command docker-compose logs -f wireguard
       
-   Download the WireGuard app on your phone and use the QR code scanner to scan one of the QR codes
+ Download the WireGuard app on your phone and use the QR code scanner to scan one of the QR codes
       
-   Activate the VPN on the app in order to turn it on
+ Activate the VPN on the app in order to turn it on
       
-   To test the VPN on your personal computer:
+ To test the VPN on your personal computer:
       
-   Begin by using the command cd wireguard
+ Begin by using the command cd wireguard
       
-   Next cd into the config file by using cd config
+ Next cd into the config file by using cd config
       
-   Lastly, enter into the peer_pc1/ file by using the command cd peer_pc1/
+ Lastly, enter into the peer_pc1/ file by using the command cd peer_pc1/
       
-   Once you are into those files you can use cat peer_pc1.conf
+ Once you are into those files you can use cat peer_pc1.conf
       
-   After all of the information is done being printed, copy and paste it into your preferred text editor and save the file with the name of your          choice ending in .conf
+ After all of the information is done being printed, copy and paste it into your preferred text editor and save the file with the name of your          choice ending in .conf
       
-   Place that new .conf file into Wireguard and your VPN is complete all you need to do is activate it
+ Place that new .conf file into Wireguard and your VPN is complete all you need to do is activate it
       
-   To test that your VPN works on both your phone and computer, visit IPLeak.com in your web browser.
+ To test that your VPN works on both your phone and computer, visit IPLeak.com in your web browser.
       
    
 ![IMG_3352](https://user-images.githubusercontent.com/60195646/205529630-77159964-a935-4b65-b8a4-160c3b087882.jpeg)
