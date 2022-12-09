@@ -1,0 +1,32 @@
+CYB-3353-01
+
+Karlie Hanson
+
+Sources Used:
+
+https://utulsa.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=75912983-0806-47a5-a3ad-acc9018aaec3
+
+https://github.com/mikesplain/openvas-docker
+
+OpenVAS Installation:
+
+Step 1: Make sure all repositories are updated using sudo apt-get update
+
+Step 2: Upgrade any remaining repositories using sudo apt-get upgrade
+
+Step 3: Install docker.io with: sudo apt-get install docker.io
+
+Step 4: Check to see if docker is running by using: sudo service docker status
+
+Step 5: Now install the container: sudo docker run -d -p 443:443 --name open vas mikesplain/openvas
+
+Step 6: Next run docker run -d -p 443:443 --name openvas mikesplain/openvas:9 This will grab the container from the registry
+
+Step 6: Give your CPU some time to drop down to the 40 range, and then try opening openvas
+
+Step 7: Open your web browser and type in https://yourIPaddress/localhost in my case it is: https://10.10.1.115/localhost
+
+Step 8: The openvas login screen should then pop up where you can login using: username: admin password: admin
+
+By using openvas, you can run vulnerability scans, set up targets, and more.
+
